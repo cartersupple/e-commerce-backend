@@ -24,9 +24,7 @@ router.get('/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
   Category.findOne({
-    where: {
-      id: req.params.id,
-    },
+    where: {id: req.params.id},
     include: [
       { model: Product, attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }
@@ -64,9 +62,7 @@ router.put('/:id', (req, res) => {
   Category.update({
     category_name: req.body.category_name},
     {
-    where: {
-       id: req.params.id,
-    }
+    where: {id: req.params.id}
     })
     .then(dbCategoryData => {
         if (!dbCategoryData[0]) {
@@ -86,9 +82,7 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
   Category.destroy({
-    where: {
-        id: req.params.id
-    }
+    where: {id: req.params.id}
   })
     .then(dbCategoryData => {
         if (!dbCategoryData) {
