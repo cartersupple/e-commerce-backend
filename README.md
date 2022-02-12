@@ -17,7 +17,7 @@ See demonstration
 (MySQL2, Sequalize, Express)
 
 ## Usage 
-Full Demonstration: <button href="https://watch.screencastify.com/v/flrBfHEV51C6x8IaS2xe">Here</button>
+Full Demonstration: <h3 href="https://watch.screencastify.com/v/flrBfHEV51C6x8IaS2xe">Here</h3>
 
 Using GET all and GET by ID:
 ![Untitled_ Feb 12, 2022 11_01 AM](https://user-images.githubusercontent.com/89411805/153725042-dc408ac5-03cc-4b82-9b13-7e09bf5975a0.gif)
